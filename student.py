@@ -60,7 +60,7 @@ if __name__ == '__main__':
 # Select the record to be changed
     student = session.query(Student).filter(Student.name == "Albert Einstein").first()
 
-# change the record
+# set new the record
     student.name = "Kim Bonnke"
 # Commit to the database
     session.commit()
